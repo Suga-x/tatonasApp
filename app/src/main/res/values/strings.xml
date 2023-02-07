@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TatonasApp</string>
+    <string name="title_activity_hardware">HardwareActivity</string>
+
 </resources>

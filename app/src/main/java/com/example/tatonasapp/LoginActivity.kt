@@ -6,18 +6,17 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 
-class MainActivity : AppCompatActivity() {
-    private var btnHardware : ImageView ? = null
+class LoginActivity : AppCompatActivity() {
+    private var btnLogin : Button?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_login2)
         supportActionBar?.hide()
-        btnHardware = findViewById(R.id.btnHardware)
-        btnHardware!!.setOnClickListener {
-            val intent = Intent(this@MainActivity, HardwareActivity::class.java)
+        btnLogin = findViewById(R.id.buttonLogin)
+        btnLogin!!.setOnClickListener {
+            val intent = Intent(this@LoginActivity, MainActivity::class.java)
             startActivity(intent)
         }
-
 
     }
 }
